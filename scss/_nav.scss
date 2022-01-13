@@ -1,0 +1,38 @@
+@mixin flex($contenido, $cof){
+    display: flex;
+    flex-direction: $cof;
+    flex-wrap: wrap;
+    justify-content: $contenido;
+}
+
+nav{
+    width: 95%;
+    background-color: $bg_oscuro;
+    margin:0.2em auto;
+    margin-top: 0;
+    margin-bottom: 1em;
+
+    ul{
+        @include flex(center, row);
+        list-style-type: none;
+        padding: 0.4em auto;
+        .li__menu{
+            padding:0.4em;
+            margin: 0.6em;
+            a{
+                padding:0.4em;
+                text-decoration: none;
+                color: $bg_claro;
+                font-size: 1em;
+                transition: all ease 1s;
+                &:hover{
+                    font-size: 1.2em;
+                    color:$bg_oscuro;
+                    background-color: $bg_claro;
+                }
+            }
+        }
+        
+        
+    }
+}

@@ -1,0 +1,29 @@
+main{
+    h2{
+        font-size: 1.2em;
+        color:$bg_oscuro;
+        text-align: center;
+    }.texto{
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        padding: 0.4em;
+        margin:0.6em;
+        color:$bg_oscuro;
+        border: solid 2px $bg_oscuro;
+    }.imagenes{
+        margin:0.6em;
+        @include flex(space-between, row);
+        div{
+            margin:0.6rem;
+            img{
+                width: 250px;
+                height: 300px;
+                transition: all ease 1s;
+                &:hover{
+                    transform: scale(1.1);
+                    box-shadow: $bg_oscuro 10px 0 10px 0;
+                }
+            }
+        }
+    }
+}

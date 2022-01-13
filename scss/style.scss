@@ -1,0 +1,22 @@
+$bg_oscuro:#120052;
+$bg_claro:#ffdaaa;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $bg_claro;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@import "nav";
+
+@import "main";
+
+@import "footer";
+
+@import "contacto";

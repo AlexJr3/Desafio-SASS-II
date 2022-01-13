@@ -1,0 +1,42 @@
+@mixin hover{
+    border: $bg_oscuro 2px solid;
+    transform: scale(1.01);
+}
+
+
+
+.h2-contacto{
+    border-bottom: $bg_oscuro 2px solid;
+}
+form{
+    margin:1em;
+    border: $bg_oscuro 2px solid;
+    padding:1em;
+    @include flex(space-between, column);
+    .form__div{
+        width: 100%;
+        margin: 0.3em;
+        label{
+            color:$bg_oscuro;
+            font-size: 0.9em;
+        }input{
+            width: 100%;
+            padding:0.4em;
+            transition: all ease 0.5s;
+            &:hover{
+                @include hover();
+            }
+
+        }.form__comentario{
+            display: block;
+        }.form__boton{
+            width: 5em;
+            display: block;
+        }.form__area{
+            transition: all ease 0.5s;
+            &:hover{
+                @include hover();
+            }
+        }
+    }
+}
