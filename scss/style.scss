@@ -1,5 +1,16 @@
 $bg_oscuro:#120052;
 $bg_claro:#ffdaaa;
+@mixin hover($aumento){
+    transform: scale($aumento);
+    box-shadow: $bg_oscuro 10px 0 10px 0;
+    border: 2px solid $bg_oscuro;
+}
+@mixin flex($contenido, $cof){
+    display: flex;
+    flex-direction: $cof;
+    flex-wrap: wrap;
+    justify-content: $contenido;
+}
 
 *{
     margin:0;

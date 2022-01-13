@@ -62,7 +62,8 @@ main .imagenes {
       transition: all ease 1s; }
       main .imagenes div img:hover {
         transform: scale(1.1);
-        box-shadow: #120052 10px 0 10px 0; }
+        box-shadow: #120052 10px 0 10px 0;
+        border: 2px solid #120052; }
 
 footer {
   display: flex;
@@ -103,8 +104,9 @@ form {
       padding: 0.4em;
       transition: all ease 0.5s; }
       form .form__div input:hover {
-        border: #120052 2px solid;
-        transform: scale(1.01); }
+        transform: scale(1.01);
+        box-shadow: #120052 10px 0 10px 0;
+        border: 2px solid #120052; }
     form .form__div .form__comentario {
       display: block; }
     form .form__div .form__boton {
@@ -113,5 +115,6 @@ form {
     form .form__div .form__area {
       transition: all ease 0.5s; }
       form .form__div .form__area:hover {
-        border: #120052 2px solid;
-        transform: scale(1.01); }
+        transform: scale(1.01);
+        box-shadow: #120052 10px 0 10px 0;
+        border: 2px solid #120052; }
